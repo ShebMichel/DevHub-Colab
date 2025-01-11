@@ -12,6 +12,9 @@ This repo is a basic for command line.
  - Create a file 
 
   run the command: echo "Hello, world" > filename.txt
+  to append in the same file we un:
+  echo " Hello, this is the second line" >> filename.txt
+  Notes: > is to write on the file, >> to append on the same file (or existing file)
 
  - Check if the file was created
    run the command: dir
