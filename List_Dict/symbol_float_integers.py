@@ -1,8 +1,8 @@
 # some symbols
 # 1- != it means NOT EQUAL, == is EQUAL
-
+# Let create a user prompt
 a= int(input(" Enter a number: "))
-
+# Let create conditions
 if a==2:
 	print('I am right, Yeah')
 else:
@@ -10,12 +10,14 @@ else:
 
 ## 1 is an integer
 ## 1.0 is a float
-
-#dd=type(1)    # <class 'int'>
-## Formating and printing
-dd2= type(1.0)  # <class 'float'>
+# [] is alist
+#dd=type(1)    # <class 'int'>, 
+#,<class 'dict'>,<class 'float'>,<class 'str'>,
+# <class 'list'>,<class 'int'>
+# Formating and printing
+dd2= type(1.0)  # type is to check which class <class 'float'>
 dd= [a for a in range(a)]
-print(dd)
+print(dd)  # 
 print(f"What is y list dd: {dd} "+str(dd))
 print(f"What is the type of {dd2}")
 pi=3.1416  # this is PI
