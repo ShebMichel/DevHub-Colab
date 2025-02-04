@@ -12,8 +12,12 @@ for i in range(num_employees):
         "age": random.randint(20, 60),
         "position": random.choice(list_of_roles),
         "salary": random.randint(30000, 120000),
-        "email": f"employee{i + 1}@company.com"
+        "email": f"employee{i + 1}@dmnsolutions.com.au"
     }
+    if i==0:
+    	employee['name']="michel"
+    	employee['position']="Founder and Principal Consultant"
+    	employee['email']=f"{employee['name']}@dmnsolutions.com.au"
     employees.append(employee)
 
 # Convert to DataFrame
