@@ -76,7 +76,7 @@ def employee_table():
 		</body>
 	</html>
 	"""
-	return render_template_string(table_html, employees=data)
+	return render_template_string(table_html, data=data)
 
 if __name__ == '__main__':
 	app.run(debug=True)
