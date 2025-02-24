@@ -18,7 +18,7 @@ Real-Time Data Fetching: The app fetches real-time fuel price data and station a
 
 Sorting & Filtering Options: Users can sort stations by price, distance, or availability.
 
-How It Works
+## How It Works
 
 Select Fuel Type: Use the dropdown menu to choose the preferred fuel type.
 
@@ -48,7 +48,7 @@ View Details & Navigate: Click on a fuel station to see detailed pricing and loc
 
 - Advanced Filters: Additional filters for fuel quality, station amenities, and brand preferences.
 
-Installation & Setup
+## Installation & Setup
 
 Clone the repository:
 
@@ -56,17 +56,16 @@ git clone [https://github.com/ShebMichel/DevHub-Colab/FuelPriceProject/fuel-sear
 
 Navigate to the project directory:
 
-cd FuelPriceProject 
-& 
-run python main.py # Backend
+- cd FuelPriceProject 
+- run python main.py # Backend
+- copy the hyperlink (something like this:  *http://localhost:3000*) on your terminal
+- paste the link to the browser.
 
-copy the hyperlink (something like this:  *http://localhost:3000*) on your terminal and open your browser to paste it.
-
-Contribution
+## Contribution
 
 Contributions are welcome! Feel free to submit pull requests or report issues in the repository.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
