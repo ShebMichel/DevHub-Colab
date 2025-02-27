@@ -32,7 +32,20 @@ Print a matching emoji (🙂, 😢) using a dictionary.
 Generate a random 8-character password using random.choice().
 Include letters, numbers, and symbols.
 
+8. Hangman Game
+A classic word-guessing game where the player tries to guess a hidden word letter by letter. Incorrect guesses reduce the number of attempts available. The game ends when the word is fully guessed or the player runs out of attempts.
 
+9. Tic-Tac-Toe
+A two-player game where "X" and "O" take turns placing their marks on a 3x3 grid. The first player to align three marks in a row, column, or diagonal wins. If all spaces are filled without a winner, the game is a draw.
+
+10. Math Quiz Game
+A simple arithmetic quiz where players answer randomly generated math questions (addition, subtraction, multiplication). Each correct answer increases the score, and the final score is displayed at the end. Great for practicing math skills!
+
+11. Snake Game (Basic Terminal Version)
+A simple snake game using the Turtle module where the player moves a snake with arrow keys. The snake moves continuously in the chosen direction. The objective is to control movement and avoid collisions (food and growth can be added for more features).
+
+12. Memory Card Game (Matching Pairs)
+A fun matching game where players flip two cards at a time, trying to find matching pairs. Cards are hidden and shuffled at the start, and correct matches remain visible. The game continues until all pairs are found.
 
 
  To test your learning, use the following for more details
