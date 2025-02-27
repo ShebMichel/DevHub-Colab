@@ -3,10 +3,10 @@
 ## Overview
 
 The Fuel Search Web App is designed to help users find fuel stations within a specified distance of a given location. The app allows users to select their preferred fuel type, enter a location, and define a search radius to retrieve relevant results.
-<<<<<<< HEAD
-![Fuel Search Web App Screenshot](images/fuel-search.png)
-=======
->>>>>>> a6eb92ef30828d953da9a0db7c1fabb5d3d76e20
+
+<p align="center">
+  <img src="images/fuel-search.png" alt="Fuel Search Web App Screenshot" width="500">
+</p>
 
 ## Features
 
