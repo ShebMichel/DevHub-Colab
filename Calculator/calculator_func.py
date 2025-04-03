@@ -39,7 +39,14 @@ def main():
     for row in buttons:
         cols = st.columns(len(row))
         for idx, btn in enumerate(row):
+            print(f" What is the button {btn}")
+
             with cols[idx]:
+                # if btn in ["*", "-", "+"]:
+                #     if st.button(f"<span style='font-size:30px;'>{btn}</span>", unsafe_allow_html=True):
+                #         st.write(f"Button {symbol} clicked!")
+
+
                 if st.button(btn):
                     if btn == "C":
                         st.session_state.expression = ""
