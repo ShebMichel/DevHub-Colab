@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h2>Add Usage — {{ household.name }}</h2>
+  <form method="post">
+    <label>
+      Type<br>
+      <select name="entry_type">
+        <option value="water">Water (litres)</option>
+        <option value="energy">Energy (kWh)</option>
+      </select>
+    </label>
+    <br>
+    <label>
+      Value<br>
+      <input type="number" step="any" name="value" required>
+    </label>
+    <br>
+    <label>
+      Recorded at (optional, ISO format)<br>
+      <input type="datetime-local" name="recorded_at">
+    </label>
+    <br>
+    <button type="submit">Add</button>
+    <a href="{{ url_for('dashboard', household_id=household.id) }}">Cancel</a>
+  </form>
+{% endblock %}
