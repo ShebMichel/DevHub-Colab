@@ -94,6 +94,32 @@ From kids taking their first steps with Python to developers building full-stack
 📚 Access to learning resources
 🏆 Portfolio-building opportunities
 ```
+---
+
+## 📅 Events
+
+We regularly host **community coding sessions, workshops, and hackathons**.
+
+### 🚀 School Holiday Hackathon
+A fun, hands-on coding hackathon during the school holidays where participants build projects, explore technology, and collaborate in teams.
+
+- 🧑‍💻 Open to kids, teens, and beginners  
+- ⚡ No prior coding experience required  
+
+🔗 **Register here:**  
+[School Holiday Hackathon](https://events.humanitix.com/school-holiday-hackathon-2-0)
+
+---
+
+### 💻 DevHub CoLab – Social Coding Club
+Our regular coding meetup where people gather to learn programming, work on projects, ask questions, and support each other.
+
+- 🤝 Collaborative learning  
+- 🧠 Beginner-friendly environment  
+- 🌍 Open to all ages  
+
+🔗 **Register here:**  
+[DevHub CoLab – Social Coding Club](https://events.humanitix.com/devhub-colab-a-social-coding-club)
 
 ---
 
