@@ -20,7 +20,7 @@
 
 ## 💡 Our Story
 
-DevHub CoLab is more than just a coding club—it's a **movement to democratize technology education**. Born in the heart of Armadale Public Library, we bring together learners of all ages and backgrounds to explore, create, and grow together through code.
+DevHub CoLab is more than just a coding club—it's a **movement to democratize tech & education**. Born in the heart of Armadale Public Library, we bring together learners of all ages and backgrounds to explore, create, and grow together through code.
 
 From kids taking their first steps with Python to developers building full-stack applications, we believe that **everyone deserves access to quality tech education**.
 
@@ -128,6 +128,7 @@ We welcome:
 ## 💖 Support Us
 
 Your support helps us:
+- 📧 michel@dmnsolutions.com.au
 - 🖥️ Provide equipment for learners
 - 📚 Develop new curriculum
 - 🎉 Host community events
@@ -154,8 +155,8 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## 👨‍💼 Reference
 
 **Michel M. Nzikou**  
-*Program Lead*  
-Founder, [DMN SOLUTIONS](https://dmnsolutions.com.au)
+*Founder & Program Lead, DMN SOLUTIONS* 
+
 
 ---
 
