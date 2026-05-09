@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h2>{{ household.name }} — Dashboard</h2>
+  <p>Postcode: {{ household.postcode }} | Created: {{ household.created_at.strftime('%Y-%m-%d') }}</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Green Score</h3>
+      <div class="score">{{ green_score }}</div>
+      <p>Simple composite of recent water & energy use (0-100).</p>
+    </div>
+
+    <div class="card">
+      <h3>Next Bin Days</h3>
+      <p>General waste: <strong>{{ schedule.general }}</strong></p>
+      <p>Recycling: <strong>{{ schedule.recycling }}</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Recent Usage (sample)</h3>
+      <ul>
+        {% if recent_summary %}
+          {% for k,v in recent_summary.items() %}
+            <li>{{ k }}: {{ v }} (sum recent entries)</li>
+          {% endfor %}
+        {% else %}
+          <li>No usage recorded yet.</li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <h3>Tips</h3>
+    <ul>
+      {% for t in tips %}
+        <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h3>Actions</h3>
+    <a class="btn" href="{{ url_for('add_usage', household_id=household.id) }}">Add Usage Entry</a>
+    <a class="btn" href="{{ url_for('export_csv', household_id=household.id) }}">Export CSV</a>
+    <a class="btn" href="{{ url_for('import_csv', household_id=household.id) }}">Import CSV</a>
+    <a class="btn" href="{{ url_for('index') }}">Back</a>
+  </section>
+
+  <hr>
+  <section>
+    <h3>Recent Raw Entries</h3>
+    {% if entries %}
+      <table class="entries">
+        <thead>
+          <tr><th>Type</th><th>Value</th><th>Recorded At</th></tr>
+        </thead>
+        <tbody>
+          {% for e in entries %}
+            <tr>
+              <td>{{ e.entry_type }}</td>
+              <td>{{ e.value }}</td>
+              <td>{{ e.recorded_at.strftime('%Y-%m-%d %H:%M') }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No entries yet.</p>
+    {% endif %}
+  </section>
+{% endblock %}

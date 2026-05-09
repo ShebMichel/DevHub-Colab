@@ -1,0 +1,17 @@
+# ==================== FILE: .env.example ====================
+"""
+# Database
+DATABASE_URL=sqlite:///perth_smb.db
+# For production use PostgreSQL:
+# DATABASE_URL=postgresql://user:password@localhost/perth_smb
+
+# Flask
+SECRET_KEY=your-secret-key-change-in-production
+FLASK_ENV=development
+DEBUG=True
+
+# Twilio
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_token
+TWI
+"""

@@ -1,0 +1,18 @@
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 0; margin: 0; color: #222; background: #f6f8fa;}
+.site-header { background: #0b6; color: white; padding: 10px 20px; display:flex; justify-content:space-between; align-items:center;}
+.site-header h1 { margin: 0; font-size: 18px;}
+.site-header a { color: white; text-decoration: none;}
+.container { max-width: 900px; margin: 20px auto; padding: 0 15px;}
+.flashes { margin-bottom: 10px;}
+.flash { padding: 8px 12px; border-radius: 6px; margin-bottom:6px;}
+.flash.success { background: #e6ffed; border: 1px solid #b0f0c6;}
+.flash.danger { background: #fff1f0; border: 1px solid #f2b0b0;}
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; margin: 12px 0;}
+.card { background: white; padding: 12px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);}
+.score { font-weight: 700; font-size: 36px; margin-top: 8px;}
+.households { list-style: none; padding: 0; }
+.households li { padding: 8px 0; border-bottom: 1px solid #eee;}
+.meta { color: #666; margin-left: 8px; font-size: 13px;}
+.btn { display:inline-block; padding: 8px 12px; margin: 4px; background: #0b6; color: white; text-decoration:none; border-radius:6px;}
+.entries { width: 100%; border-collapse: collapse; }
+.entries th, .entries td { text-align:left; padding:6px; border-bottom:1px solid #eee;}

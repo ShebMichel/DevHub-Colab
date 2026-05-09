@@ -1,8 +1,10 @@
 
 # 1. Creating and Accessing Elements in a List
-# Create a list of fruits
+# Create a list of fruits. 
+#list = []
 fruits = ["apple", "banana", "cherry"]
 #fruits = ["apple", "banana"]
+# Add fruit
 fruits.append('orange')
 print(fruits)  # ["apple", "banana", "cherry",'orange']
 # Accessing elements
@@ -10,11 +12,14 @@ print(fruits[0])  # Output: apple
 print(fruits[1])  # Output: banana
 print(fruits[2])  # Output: cherry
 print(fruits[3])  # Errors
-
+# Remove fruits
+fruits.remove('banana')
+print(fruits)
 # 2. Adding and Removing Items from a List
 # Start with an empty list
 colors = []
 
+print("I am trying python today")
 # Adding items
 colors.append("red")
 #print(colors) --> ['red']
@@ -26,9 +31,11 @@ print(colors)  # Output: ['red','blue','green']
 colors.remove("blue")
 
 print(colors)  # Output: ['red', 'green']
+## List was []
 
-#3. Creating and Accessing a Dictionary
-#{ a1:b1, a2:b2} --> a1 is what the call key, b1 is the value
+
+#3. Creating and Accessing a Dictionary a={}
+#{a1:b1, a2:b2} --> a1 is what the call key, b1 is the value
 # Create a dictionary with name-age pairs
 person = {"Alice": 25, "Bob": 30, "Charlie": 35}
 
@@ -53,15 +60,15 @@ print(phone_book)
 
 # A list of dictionaries
 students = [
-    {"name": "Alice", "age": 20},
-    {"name": "Bob", "age": 22},
-    {"name": "Charlie", "age": 19}
+    {"name": "Alice", "age": 20, "cellnumber":911-040-20},
+    {"name": "Bob", "age": 22, "cellnumber":911-041-20},
+    {"name": "Charlie", "age": 19, "cellnumber":911-042-20}
 ]
 
 # Accessing information from the list of dictionaries
 for student in students:
-	#print(student,student['name'],student['age'] )
-    print(f"{student['name']} is {student['age']} years old.")
+	print(student,student['name'],student['age'] )
+    #print(f"{student['name']} is {student['age']} years old.")
 
 # Output:
 # Alice is 20 years old.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community Event Finder</title>
+  <style>
+    body { font-family: Arial; background: #f5f7fa; padding: 20px; }
+    .box { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
+    input, select, button { width: 100%; padding: 8px; margin: 6px 0; }
+    button { background: #0077cc; color: white; border: none; cursor: pointer; }
+    .event { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+
+<body>
+<div class="box">
+  <h1>📅 Community Event Finder</h1>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <p class="{{ category }}">{{ message }}</p>
+    {% endfor %}
+  {% endwith %}
+
+  <h2>Add Event</h2>
+  <form method="post" action="/add">
+    <input name="name" placeholder="Event name" />
+    <input name="date" type="date" />
+    <select name="category">
+      <option value="">Select category</option>
+      <option>Tech</option>
+      <option>Community</option>
+      <option>Education</option>
+    </select>
+    <button>Add Event</button>
+  </form>
+
+  <hr />
+
+  <h2>Events</h2>
+  <form method="get">
+    <select name="category" onchange="this.form.submit()">
+      <option {% if category == "All" %}selected{% endif %}>All</option>
+      <option {% if category == "Tech" %}selected{% endif %}>Tech</option>
+      <option {% if category == "Community" %}selected{% endif %}>Community</option>
+      <option {% if category == "Education" %}selected{% endif %}>Education</option>
+    </select>
+  </form>
+
+  {% if events %}
+    {% for event in events %}
+      <div class="event">
+        <strong>{{ event.name }}</strong><br />
+        <small>{{ event.date }} | {{ event.category }}</small>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No events found.</p>
+  {% endif %}
+</div>
+</body>
+</html>
